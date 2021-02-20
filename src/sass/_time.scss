@@ -1,0 +1,95 @@
+$timeBG: #d0eaec;
+$mainBlue: #a8f0ef;
+$mainPink: #f09aa8;
+
+.App-time {
+    width: 590px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .time-inner {
+    width: 425px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: $timeBG;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .Img-time {
+    width: 60px;
+    height: 40px;
+  }
+
+  #timeline{
+    width: 300px;
+    height: 2px;
+    background: #78c7c8;
+    margin-top: 0px;
+    float: left;
+    border-radius: 15px;
+  }
+  
+  #playhead{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-top: -5px;
+    background: rgba(255, 255, 255, 1);
+  }
+
+  .App-slider {
+    display: flex;
+    -webkit-appearance: none;
+    //height:5px;
+    border-radius: 0; // 清除不必要的東西
+
+
+    overflow:hidden;     /* 限定範圍 */
+    width: 300px;
+    
+    outline : none;      /* 避免點選會有藍線或虛線 */
+    background:none;
+    
+    cursor: pointer;
+    &::-webkit-slider-runnable-track {
+      background-color: rgba(104, 103, 103, 0.3);
+    }
+    // 是能調整拖曳鈕的朋友
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none; // 一樣要消除
+      position: relative;
+      width: 4px;
+      height: 4px;
+      //background: $mainPink;
+      //border: 5px solid $mainBlue;
+      border-radius:50%;
+      box-shadow: -100vw 0 0 100vw #fff;
+      //transition:.2s;  
+  }
+  }
+
+  .App-duration{
+    display: flex;
+    font-size:14px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 50px;
+  }
+
+
+
+
+
+
+
+
+
+

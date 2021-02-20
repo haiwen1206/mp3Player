@@ -1,0 +1,13 @@
+$centerBG: white;
+
+.App-maintop {
+    margin-top: '0px';
+    width: 590px;
+    height: 420px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    //background: $centerBG;
+    //color: red;
+  }

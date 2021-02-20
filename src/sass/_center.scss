@@ -1,0 +1,25 @@
+$centerBG: rgb(104, 103, 103);
+
+.App-center {
+    width: 425px;
+    height: 425px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    //background: $centerBG;
+    //border:1px red solid;
+    //color: red;
+  }
+
+  .Image-size {
+    width: 422px;
+    height: 422px;
+  }
+
+  .Center-shadow {
+    width: 422px;
+    height: 422px;
+    box-shadow:0 0 15px 0 rgba(1, 31, 34, 0.2),inset 0 0 15px 0 rgba(1, 31, 34, 0.2);
+  }
+

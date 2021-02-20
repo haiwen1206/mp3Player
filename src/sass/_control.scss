@@ -1,0 +1,196 @@
+
+
+$controlBG: rgba(104, 103, 103, 0.8);
+$innerBG-top: green;
+$innerBG-bottom: blue;
+$innerHeight: 375px;
+$transBG: rgba(104, 103, 103, 0);
+
+
+.App-control {
+    width: 82.5px;
+    height: 425px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    //background: $controlBG;
+    //border:1px red solid;
+    //color: red;
+  }
+
+  .Control-inner {
+    width: 82.5px;
+    height: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: $controlBG;
+    //border:1px red solid;
+    //color: red;
+  }
+
+  .Inner-top {
+    width: 82.5px;
+    height: $innerHeight/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    //background: $innerBG-top;
+    //border:1px green solid;
+    //color: red;
+  }
+
+  .Inner-bottom {
+    width: 82.5px;
+    height: $innerHeight/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    //background: $innerBG-bottom;
+    //border:1px blue solid;
+    //color: red;
+  }
+
+  button{
+    padding: 0;
+    margin-top: 30px;
+    background-color: $transBG;
+    box-sizing: border-box;
+}
+.play{
+  height: 42px;
+  border-style: solid;
+  border-width: 20px 0 20px 35px;
+  border-color: transparent transparent transparent #d0c3c5;
+  transition: all .1s ease;
+  
+}
+
+.play:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
+.pause:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
+.pause{
+  width: 30px;
+  height: 42px;
+  border-style: double;
+  border-width: 0px 0px 0px 35px;
+  border-color: #d0c3c5;
+  transition: all .1s ease;
+}
+
+.Img-control{
+  width: 45px;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+// .App-volume {
+//   -webkit-appearance: none;
+//   overflow:hidden;     /* 限定範圍 */
+//   width: 200px;
+//   height:20px;
+//   outline : none;      /* 避免點選會有藍線或虛線 */
+//   background:none;
+// }
+
+// .App-volume::-webkit-slider-thumb{
+//   -webkit-appearance: none;
+//   position: relative;    /* 設為相對位置，為了前後區塊的絕對位置而設定 */
+//   width:10px;
+//   height:10px;
+//   background:#f22;
+//   border-radius:50%;
+//   transition:.2s;        /* 點選放大時候的漸變時間 */
+// }
+
+
+// #input{
+//   background-image:url(../image/v6.png);
+//   // //background-attachment:fixed;
+//   // //background-repeat:no-repeat;
+//   background-size:45px 30px;
+//   width: 45px;
+//   height: 30px;
+// }
+
+.Control-input {
+  
+  -webkit-appearance: none;
+  overflow:hidden;     /* 限定範圍 */
+  //width: 50px;
+  //height:5px;
+  outline : none;      /* 避免點選會有藍線或虛線 */
+  background-color: none;
+  background: none;
+  
+  width: 45px;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 0; // 清除不必要的東西
+  cursor: pointer;
+  // &::-webkit-slider-runnable-track {
+  //   background-color: rgba(104, 103, 103, 0.3);
+  // }
+  // 是能調整拖曳鈕的朋友
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none; // 一樣要消除
+    position: relative;
+    width: 4px;
+    height: 4px;
+    //background: $mainPink;
+    //border: 5px solid $mainBlue;
+    border-radius:50%;
+    //box-shadow: -100vw 0 0 100vw #fff;
+    //transition:.2s;  
+}
+}
+
+.Control-option11{
+  //background-image:url(../image/v6.png);
+  //background: url('../image/v6.png');
+  width: 10px;
+  height: 10px;
+  background-color: red;
+}
+
+.Control-PNG5{
+  background-image:url(../image/v6.png);
+  background-size:45px 30px;
+}
+
+.Control-PNG4{
+  background-image:url(../image/v5.png);
+  background-size:45px 30px;
+}
+
+.Control-PNG3{
+  background-image:url(../image/v4.png);
+  background-size:45px 30px;
+}
+
+.Control-PNG2{
+  background-image:url(../image/v3.png);
+  background-size:45px 30px;
+}
+
+.Control-PNG1{
+  background-image:url(../image/v2.png);
+  background-size:45px 30px;
+}
+
+.Control-PNG0{
+  background-image:url(../image/v1.png);
+  background-size:45px 30px;
+}
+

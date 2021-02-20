@@ -1,0 +1,22 @@
+$listPink: #f09aa8;
+$listBlue: #a8f0ef;
+
+.App-list {
+    width: 425px;
+    height: 425px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: -webkit-linear-gradient(#f09aa8,#a8f0ef);
+    background: -o-linear-gradient(#f09aa8,#a8f0ef);
+    background: -moz-linear-gradient(#f09aa8,#a8f0ef);
+    background: linear-gradient(#f09aa8,#a8f0ef);
+    //border:1px red solid;
+    color: black;
+  }
+
+
+
+
+
